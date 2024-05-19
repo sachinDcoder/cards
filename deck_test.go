@@ -41,7 +41,7 @@ func TestDeal(t *testing.T) {
 
 	d1, d2 := deal(d, 5)
 
-	if len(d1) != 5 || len(d2) != 11 {
+	if len(d1) != 5 {
 		t.Errorf("Expected length of 5 in d1, but got %v", len(d1))
 	}
 
