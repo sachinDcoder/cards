@@ -1,12 +1,18 @@
 package main
 
 func main() {
-	cards := newDeck()
+	// cards := newDeck()
 
-	hand, remainingCards := deal(cards, 5)
+	// hand, remainingCards := deal(cards, 5)
 
-	hand.print()
-	remainingCards.print()
+	// hand.print()
+	// remainingCards.print()
 
-	cards.writeToFile("my-cards.txt")
+	// err := cards.writeToFile("my-cards.txt")
+	// if err != nil {
+	// 	fmt.Println("Error: ", err)
+	// }
+
+	cards := newDeckFromFile("my-cards.txt")
+	cards.print()
 }
